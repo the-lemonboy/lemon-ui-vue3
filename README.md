@@ -1,25 +1,5 @@
-# demo
+## TODO
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# lemon-ui-vue3
+* [ ] 全面支持TS
+* [ ] 优化autoRize工具
+* [ ] 组件单测

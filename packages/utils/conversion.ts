@@ -1,4 +1,3 @@
-
 /**
  * 
  * @param {需要转换到值} param 
@@ -7,7 +6,8 @@
  * @param {不能小于的值} ask 
  * @returns 
  */
-export const converse =  function(param,node,direction,ask){
+type param = string
+export const converse =  function(param: string,node:HTMLElement,direction,ask){
         const unit = param.replace(/\d/g, "")
         const number = parseFloat(param.match(/\d+/)[0]);
         let pxValue=null
