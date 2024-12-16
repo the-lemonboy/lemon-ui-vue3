@@ -55,7 +55,7 @@
 
 <script> 
  import { converse } from '../../utils/conversion';
-  import {throttle} from '../../utils/throttle-debounce.js'
+  import {throttle} from 'throttle-debounce'
   export default {
     name: "LEBorderBox2",
     props: {
