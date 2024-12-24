@@ -50,7 +50,7 @@
     </div>
   </div>
 </template>
-<script>
+<script lang="ts">
 import { converse } from "../../utils/conversion";
 import { throttle } from "throttle-debounce";
 export default {

@@ -38,7 +38,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import { converse } from '../../utils/conversion';
 import { throttle } from 'throttle-debounce'
 export default {
@@ -67,11 +67,14 @@ export default {
     },
     data() {
         return {
-            getWidth: converse(this.width, this.$refs.leTitleBox, 'width', 100),
-            getHeight: converse(this.height, this.$refs.leTitleBox, 'height', 20),
+            getWidth: 0,
+            getHeight: 0,
+            throttledResizeHandler: null as any
         }
     },
     mounted() {
+        this.getWidth = converse(this.width, this.$refs.leTitleBox, 'width', 100);
+    this.getHeight = converse(this.height, this.$refs.leTitleBox, 'height', 20);
         window.addEventListener('resize', throttle(() => {
             this.getWidth = converse(this.width, this.$refs.leTitleBox, 'width', 100)
             this.getHeight = converse(this.height, this.$refs.leTitleBox, 'height', 20)
